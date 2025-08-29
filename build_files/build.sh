@@ -5,6 +5,7 @@ set -ouex pipefail
 ### Install packages
 
 dnf5 -y copr enable solopasha/hyprland
+dnf5 -y copr enable che/nerd-fonts
 dnf5 -y install \
 	tmux \
 	pavucontrol \
@@ -18,8 +19,9 @@ dnf5 -y install \
 	hyprshot \
 	swww \
 	waypaper \
-	fuzzel
-
+	fuzzel \
+	nerd-fonts
+dnf5 -y copr disable che/nerd-fonts
 dnf5 -y copr disable solopasha/hyprland
 
 #### Example for enabling a System Unit File
