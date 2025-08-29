@@ -24,6 +24,8 @@ dnf5 -y install \
 dnf5 -y copr disable che/nerd-fonts
 dnf5 -y copr disable solopasha/hyprland
 
+dnf5 -y remove @kde-desktop-environment
+
 #### Example for enabling a System Unit File
 
 systemctl enable podman.socket
