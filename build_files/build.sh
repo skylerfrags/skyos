@@ -17,7 +17,9 @@ dnf5 -y install \
 	hyprpolkitagent \
 	hyprshot \
 	swww \
-	waypaper
+	waypaper \
+	fuzzel
+
 dnf5 -y copr disable solopasha/hyprland
 
 #### Example for enabling a System Unit File
