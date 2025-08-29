@@ -5,7 +5,8 @@ set -ouex pipefail
 ### Install packages
 
 dnf5 copr enable solopasha/hyprland
-dnf5 install -y tmux \
+dnf5 install -y \
+	tmux \
 	pavucontrol \
 	kitty \
 	sddm \
@@ -17,6 +18,7 @@ dnf5 install -y tmux \
 	hyprshot \
 	swww \
 	waypaper
+dnf5 copr disable solopasha/hyprland
 
 #### Example for enabling a System Unit File
 
